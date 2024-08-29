@@ -1,0 +1,348 @@
+/* Basic reset */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #110E18;
+  color: #fff;
+}
+
+/* Timeline container */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  position: fixed; /* Fixes the position of the footer */
+  top: 0; /* Positions it at the bottom of the viewport */
+  left: 50%; /* Moves the footer to the center horizontally */
+  transform: translateX(-50%); /* Adjusts the footer's position to be centered */
+  width: 410px; /* Fixed width of the footer */
+  background-color: #110E18; /* Background color */
+  display: flex;
+  justify-content: space-between; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  padding: 10px; /* Padding for spacing */
+}
+
+.logo {
+  width: 100px;
+}
+
+.post-interactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Post container */
+.post {
+  background-color: #110E18;
+  border-radius: 10px;
+  width: 400px;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #2F2C38;
+  box-shadow: rgba(178, 177, 177, 0.24) 0px 3px 5px;
+}
+
+.post-button {
+  width: 100%;
+  color: #8B8793;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-button-icon {
+  color: #8B8793;
+  padding-right: 5px;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+  align-items: end;
+}
+
+/* Question */
+.question {
+  margin: 15px 0;
+}
+
+/* Reply container */
+.reply {
+  background-color: #110E18;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.reply-text {
+  margin: 10px 0;
+}
+
+.reply-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  position: fixed; /* Fixes the position of the footer */
+  bottom: 0; /* Positions it at the bottom of the viewport */
+  left: 50%; /* Moves the footer to the center horizontally */
+  transform: translateX(-50%); /* Adjusts the footer's position to be centered */
+  width: 430px; /* Fixed width of the footer */
+  background-color: #110E18; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: rgba(178, 177, 177, 0.24) 0px 3px 5px;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  padding: 10px 0; /* Padding for spacing */
+}
+
+.footer-icons {
+  display: flex; /* Align icons horizontally */
+  gap: 70px; /* Spacing between icons */
+}
+
+.footer-icons i {
+  font-size: 24px; /* Size of the icons */
+  color: #f9f9f9; /* Color of the icons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footer-icons i:hover {
+  color: #8360FF; /* Color change on hover */
+}
+
+/* Profile container */
+.profile-container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username-container {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.verified-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.time-ago {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #a1a1a1;
+}
+
+.more-options {
+  margin-left: 10px;
+  font-size: 1.5em;
+  color: #a1a1a1;
+  cursor: pointer;
+}
+
+/* Comment container */
+.comment-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.engagement-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.engagement {
+  font-size: 18px;
+}
+
+.engagement-stats, .comments-reposts {
+  color: #777;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #0073b1;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #8B8793;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background-color: #272231;
+}
+
+.user-comment {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #272231;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-details {
+  width: 100%;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #0073b1;
+}
+
+.user-title {
+  font-size: 14px;
+  color: #777;
+}
+
+.comment-time {
+  font-size: 12px;
+  color: #777;
+  margin-left: 10px;
+}
+
+.comment-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #6E6A76;
+}
+
+.comment-actions {
+  display: flex;
+  margin-top: 5px;
+}
+
+.comment-action {
+  background: none;
+  border: none;
+  color: #0073b1;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.comment-action:hover {
+  text-decoration: underline;
+}
+
+
+.post-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.comment-submit-btn {
+  height: 40px;
+  border-radius: 20px;
+  background-color: #272231;
+  border: none;
+  color: white;
+}
+
+.liked {
+  color: red;
+}
+
+.saved {
+  color: gold;
+}
